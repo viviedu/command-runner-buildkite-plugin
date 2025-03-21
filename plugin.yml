@@ -1,6 +1,8 @@
-name: "command-runner-buildkite-plugin"
+name: "command-runner"
 description: "A plugin to run a specified command. Useful if commands are needed prior to other plugins running."
 author: "viviedu"
+requirements:
+ - bash
 configuration:
   properties:
     command:
