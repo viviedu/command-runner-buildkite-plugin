@@ -9,4 +9,4 @@ configuration:
       type: string
   additionalProperties: false
 hooks:
-  pre-checkout: hooks/pre-checkout
+  post-checkout: hooks/post-checkout
