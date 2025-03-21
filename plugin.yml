@@ -5,7 +5,11 @@ requirements:
  - bash
 configuration:
   properties:
-    command:
+    precheckout:
+      type: string
+    checkout:
+      type: string
+    postcheckout:
       type: string
   additionalProperties: false
 hooks:
