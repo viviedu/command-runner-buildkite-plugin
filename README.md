@@ -4,14 +4,12 @@ This plugin will enable you to run a command in the plugin steps, which by defau
 
 This is especially useful if subsequent plugins rely on needing to run some command. In our case, as an example, this was checking out only specific submodules before running our docker-compose plugin.
 
-**Plugin ID:** command-runner
-
 ## Using the plugin
 
 ```yaml
 steps:
   - label: "My pipeline step"
     plugins:
-      - https://github.com/viviedu/command-runner-buildkite-plugin.git:
+      - https://github.com/viviedu/command-runner-buildkite-plugin.git#master:
           command: "./my-command.sh"
 ```
