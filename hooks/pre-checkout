@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "--- running command"
+
+command_to_run="${BUILDKITE_PLUGIN_COMMAND_RUNNER_BUILDKITE_PLUGIN_COMMAND:-}"
+
+if [ -z "$command_to_run" ]; then
+  echo "No command specified. Skipping."
+else
+  echo "Running command: $command_to_run"
+  eval "$command_to_run"
+fi
+
+echo "--- finished running command"

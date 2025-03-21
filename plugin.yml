@@ -1,0 +1,5 @@
+name: "command-runner-buildkite-plugin"
+description: "A plugin to run a specified command. Useful if commands are needed prior to other plugins running."
+author: "viviedu"
+hooks:
+  pre-checkout: hooks/pre-checkout
