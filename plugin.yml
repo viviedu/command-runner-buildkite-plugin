@@ -1,6 +1,6 @@
-name: "command-runner"
+name: Command Runner
 description: "A plugin to run a specified command. Useful if commands are needed prior to other plugins running."
-author: "viviedu"
+author: viviedu
 requirements:
  - bash
 configuration:
