@@ -1,5 +1,5 @@
 name: Command Runner
-description: "A plugin to run a specified command. Useful if commands are needed prior to other plugins running."
+description: "A plugin to run a specified command at any of the checkout steps"
 author: viviedu
 requirements:
  - bash
@@ -13,4 +13,6 @@ configuration:
       type: string
   additionalProperties: false
 hooks:
+  pre-checkout: hooks/pre-checkout
+  checkout: hooks/checkout
   post-checkout: hooks/post-checkout
