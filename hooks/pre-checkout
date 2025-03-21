@@ -3,7 +3,7 @@ set -euo pipefail
 
 echo "--- running command"
 
-command="$(plugin_read_config COMMAND)"
+command="${BUILDKITE_PLUGIN_COMMAND_RUNNER_COMMAND:-}"
 
 if [ -z "$command" ]; then
   echo "No command specified. Skipping."
